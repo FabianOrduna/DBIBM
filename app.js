@@ -10,7 +10,7 @@ var fs = require('fs');
 app.use(express.static(__dirname + '/public'));
 
 //To Store URL of Cloudant VCAP Services as found under environment variables on from App Overview page
-var cloudant_url = "https://200f057b-be7b-4473-bcb4-2415e646ebb1-bluemix:2182174738addc28bee12ef604ad88b23792a0563bd1beaec52a065f0644441c@200f057b-be7b-4473-bcb4-2415e646ebb1-bluemix.cloudant.com"
+var cloudant_url = ""
 var services = JSON.parse(process.env.VCAP_SERVICES || "{}");
 // Check if services are bound to your project
 
